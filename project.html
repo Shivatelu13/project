@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fas fa-envelope"></i> info@example.com</span>
+            <span><i class="fas fa-phone-alt"></i> +012 345 6789</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <div class="logo">HOTELIER</div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#rooms">ROOMS</a></li>
+            <li class="dropdown">
+                <a href="#">PAGES ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <button class="premium-btn">PREMIUM VERSION →</button>
+    </nav>
+
+    <!-- Image Slider -->
+<div class="slider-container" id="home">
+    <div class="slider">
+        <div class="slide">
+            <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/carousel-1.jpg"  alt="Luxury Hotel">
+            <div class="hero-content">
+                <p class="sub-heading">LUXURY LIVING</p>
+                <h1>Discover A Brand<br>Luxurious Hotel</h1>
+                <div class="hero-buttons">
+                    <button class="btn btn-orange"><a href="#rooms"> Our Rooms</a></button>
+                    <button class="btn btn-light"><a href="#booking">Book A ROOM</a></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/carousel-2.jpg" alt="Luxury Hotel">
+            <div class="hero-content">
+                <p class="sub-heading">LUXURY LIVING</p>
+                <h1>Experience True<br>Comfort & Elegance</h1>
+                <div class="hero-buttons">
+                    <button class="btn btn-orange">OUR ROOMS</button>
+                    <button class="btn btn-light">BOOK A ROOM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+
+
+<div style="margin-top: 40px;" class="booking-container">
+    
+    <div class="booking-form" id="booking">
+        <input type="text" placeholder="Check in">
+        <input type="text" placeholder="Check out">
+        <select>
+            <option>Adult</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <select>
+            <option>Child</option>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+        </select>
+        <button class="submit-btn">SUBMIT</button>
+    </div>
+</div>
+
+
+
+<div class="about-section" id="about">
+    <div class="about-text" data-aos="fade-right">
+        <h5>ABOUT US</h5>
+        <h1>Welcome to <span>HOTELIER</span></h1>
+        <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+        </p>
+        <div class="stats-container">
+            <div class="stat-box" >
+                <i class="fas fa-hotel"></i>
+                <h2>1234</h2>
+                <p>Rooms</p>
+            </div>
+            <div class="stat-box">
+                <i class="fas fa-users-cog"></i>
+                <h2>1234</h2>
+                <p>Staffs</p>
+            </div>
+            <div class="stat-box">
+                <i class="fas fa-users"></i>
+                <h2>1234</h2>
+                <p>Clients</p>
+            </div>
+        </div>
+        <button class="explore-btn">EXPLORE MORE</button>
+    </div>
+    <div class="about-images" data-aos="fade-left">
+        <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/about-1.jpg" class="main-img">
+        <div class="small-images">
+            <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/about-2.jpg">
+            <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/about-3.jpg">
+            <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/about-4.jpg">
+        </div>
+    </div>
+</div>
+
+
+
+<section class="rooms" id="rooms">
+    <div class="container">
+        <h3 class="section-title">Explore Our <span>ROOMS</span></h3>
+        <div class="room-cards" data-aos="fade-up">
+            <div class="room-card">
+                <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/room-1.jpg" alt="Junior Suite">
+                <span class="price">$100/Night</span>
+                <h4>Junior Suite</h4>
+                <div class="room-info">
+                    <span>🛏 3 Bed</span>
+                    <span>🛁 2 Bath</span>
+                    <span>📶 Wifi</span>
+                </div>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
+                <div class="room-buttons">
+                    <button class="btn btn-detail">VIEW DETAIL</button>
+                    <button class="btn btn-book">BOOK NOW</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/room-2.jpg" alt="Executive Suite">
+                <span class="price">$100/Night</span>
+                <h4>Executive Suite</h4>
+                <div class="room-info">
+                    <span>🛏 3 Bed</span>
+                    <span>🛁 2 Bath</span>
+                    <span>📶 Wifi</span>
+                </div>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
+                <div class="room-buttons">
+                    <button class="btn btn-detail">VIEW DETAIL</button>
+                    <button class="btn btn-book">BOOK NOW</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/room-3.jpg" alt="Super Deluxe">
+                <span class="price">$100/Night</span>
+                <h4>Super Deluxe</h4>
+                <div class="room-info">
+                    <span>🛏 3 Bed</span>
+                    <span>🛁 2 Bath</span>
+                    <span>📶 Wifi</span>
+                </div>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet.</p>
+                <div class="room-buttons">
+                    <button class="btn btn-detail">VIEW DETAIL</button>
+                    <button class="btn btn-book">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="hero">
+    <div class="container" data-aos="zoom-in-down">
+        <h4 class="sub-title">LUXURY LIVING <span></span></h4>
+        <h1 class="main-title1">Discover A Brand <br>Luxurious Hotel</h1>
+        <p class="description">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+            diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+            magna dolore erat amet
+        </p>
+        <div class="buttons">
+            <button class="btn btn-primary">OUR ROOMS</button>
+            <button class="btn btn-secondary">BOOK A ROOM</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="services" id="services">
+    <div class="container" data-aos="fade-down-right">
+        <h4 class="sub-title">OUR SERVICES <span></span></h4>
+        <h2 class="main-title"> Explore Our <span>SERVICES</span></h2>
+
+        <div class="service-grid">
+            <div class="service-box">
+                <div class="icon">
+                    
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <h3>Rooms & Appartment</h3>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+            </div>
+
+            <div class="service-box">
+                <div class="icon">
+                
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3>Food & Restaurant</h3>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+            </div>
+
+            <div class="service-box">
+                <div class="icon">
+                    
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+                <h3>Spa & Fitness</h3>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+            </div>
+
+            <!-- New Boxes Below -->
+            <div class="service-box">
+                <div class="icon">
+                    
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <h3>Sports & Gaming</h3>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+            </div>
+
+            <div class="service-box">
+                <div class="icon">
+                    
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+                <h3>Event & Party</h3>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+            </div>
+
+            <div class="service-box">
+                <div class="icon">
+                    
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h3>GYM & Yoga</h3>
+                <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="reviews-section">
+        <!-- Background Image -->
+        <div class="background"></div>
+
+        <!-- Review Slider -->
+        <div class="review-container" data-aos="zoom-out">
+            <button class="prev-btn">&#x2190;</button>
+
+            <div class="review-slider">
+                <div class="review active">
+                    <p>"Amazing experience! The service was excellent and the ambiance was great!"</p>
+                    <div class="client">
+                        <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/testimonial-3.jpg" alt="Client 1">
+                        <div>
+                            <h3>John Doe</h3>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review active">
+                    <p>"Loved it! The atmosphere was so relaxing. Highly recommended!"</p>
+                    <div class="client">
+                        <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/testimonial-1.jpg" alt="Client 2">
+                        <div>
+                            <h3>Jane Smith</h3>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <p>"Fantastic place to unwind. Will definitely visit again!"</p>
+                    <div class="client">
+                        <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/testimonial-2.jpg" alt="Client 3">
+                        <div>
+                            <h3>Mike Williams</h3>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <p>"Had a wonderful time here. Everything was just perfect!"</p>
+                    <div class="client">
+                        <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/testimonial-3.jpg" alt="Client 4">
+                        <div>
+                            <h3>Sarah Johnson</h3>
+                            <p>Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn">&#x2192;</button>
+        </div>
+    </section>
+
+   <!--<script src="script.js"></script>-->
+
+
+
+    <section class="team-section" data-aos="fade-up"
+    data-aos-duration="3000">
+        <h2><span>OUR TEAM</span> <br> Explore Our <span class="highlight">STAFFS</span></h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/team-1.jpg" alt="Team Member 1">
+                <div class="team-info">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+    
+            <div class="team-member">
+                <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/team-2.jpg" alt="Team Member 2">
+                <div class="team-info">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+    
+            <div class="team-member">
+                <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/team-3.jpg" alt="Team Member 3">
+                <div class="team-info">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+    
+            <div class="team-member">
+                <img src="https://demo.htmlcodex.com/2085/hotel-html-template/img/team-3.jpg" alt="Team Member 4">
+                <div class="team-info">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" data-aos="zoom-in">
+        <div class="container">
+            <div class="footer-top">
+                <h2>Subscribe Our <span class="highlight">NEWSLETTER</span></h2>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button>SUBMIT</button>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-box">
+                    <h3>HOTELIER</h3>
+                    <p>Download <b>Hotelier – Premium Version</b>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.</p>
+                </div>
+    
+                <div class="footer-box" id="contact">
+                    <h3>CONTACT</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+    
+                <div class="footer-box">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-box">
+                    <h3>SERVICES</h3>
+                    <ul>
+                        <li><a href="#">Food & Restaurant</a></li>
+                        <li><a href="#">Spa & Fitness</a></li>
+                        <li><a href="#">Sports & Gaming</a></li>
+                        <li><a href="#">Event & Party</a></li>
+                        <li><a href="#">GYM & Yoga</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>© Your Site Name, All Right Reserved. Designed By <a href="#">HTML Codex</a></p>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Help</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+        let index = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+const slider = document.querySelector('.slider');
+
+function showSlide(i) {
+    index = (i + totalSlides) % totalSlides; // Ensures smooth looping
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index++;
+    showSlide(index);
+}
+
+function prevSlide() {
+    index--;
+    showSlide(index);
+}
+
+
+// Event listeners for navigation buttons
+document.querySelector('.next').addEventListener('click', nextSlide);
+document.querySelector('.prev').addEventListener('click', prevSlide);
+
+        });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const reviews = document.querySelectorAll(".review");
+    let index = 0;
+
+    function showReviews() {
+        reviews.forEach((review) => review.classList.remove("active"));
+
+        let nextIndex = (index + 1) % reviews.length;
+        reviews[index].classList.add("active");
+        reviews[nextIndex].classList.add("active");
+    }
+
+    function nextReview() {
+        index = (index + 2) % reviews.length;
+        showReviews();
+    }
+
+    function prevReview() {
+        index = (index - 2 + reviews.length) % reviews.length;
+        showReviews();
+    }
+
+    document.querySelector(".next-btn").addEventListener("click", nextReview);
+    document.querySelector(".prev-btn").addEventListener("click", prevReview);
+
+    setInterval(nextReview, 3000); // Auto-slide every 3 seconds
+    showReviews();
+});
+
+
+  AOS.init();
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    });
+
+    </script>
+
+</body>
+</html>
